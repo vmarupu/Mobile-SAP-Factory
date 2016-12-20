@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href='css/OpenSans.css' rel='stylesheet'>
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+  <script src="lib/angular-base64/angular-base64.js"></script>
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+  <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+  <!-- your app's js -->
+  <script src="js/app.js"></script>
+  <script src="js/controller.js"></script>
+
+</head>
+
+<body ng-app="starter">
+  <ion-nav-view></ion-nav-view>
+  <ion-nav-bar class="bar-positive custom-dark" align-title="center"></ion-nav-bar>
+  <!--Here are the Intro pages-->
+  <script id="templates/intro.html" type="text/ng-template">
+    <ion-view view-title="SAP Mobile Factory" class="view-with-bg">
+      <ion-nav-buttons side="left">
+        <button class="button button-light button-clear no-animation" ng-click="startApp()" ng-show="!slideIndex">
+          <b>Skip</b>
+        </button>
+        <button class="button button-light button-clear no-animation" ng-click="previous()" ng-show="slideIndex > 0">
+          <b>Back</b>
+        </button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+        <button class="button button-light button-clear no-animation" ng-click="next()" ng-show="slideIndex != 2">
+          <b>Next</b>
+        </button>
+        <button class="button button-light button-clear no-animation" ng-click="startApp()" ng-show="slideIndex == 2">
+          <b>Start</b>
+        </button>
+      </ion-nav-buttons>
+      <!--We mentioned three slides each slide for each page-->
+      <ion-slide-box on-slide-changed="slideChanged(index)">
+        <ion-slide>
+          <div id="logo">
+            <img src="/img/4.png" width="200" height="200">
+          </div>
+          <h2>Welcome to <b>SAP Mobile Factory !!!</b></h2>
+          <br>
+          <p>
+            This application showcases the Mobile Warehouse Management Use Case for Bin-to-Bin transfer
+          </p>
+        </ion-slide>
+        <ion-slide class="slideTechScreen">
+          <center>
+            <div class="padding">
+              <h2 style="color:#ef4048;">
+                <b style="color:#232527;">Technology</b>
+                <b> Space</b>
+              </h2>
+            </div>
+          </center>
+          <br>
+          <center>
+            <div class="padding center" style="border:1px solid #232527 ;border-radius:15px;height:40%;width:60%;">
+              <h4 class="">This application is built using <b style="color:#2368a0;">Ionic</b>,
+              <b style="color:#232527;">Angular</b> and <b style="color:#ef4048">Cordova</b> frameworks</h4>
+            </div>
+          </center>
+          <br>
+          <br>
+          <center>
+            <div class="padding">
+              <h4>The application uses the <b style="color:#ef4048;">SAP</b><b> Netweaver Gateway</b> to communicate with SAP
+             <b style="color:#0d416b;">Services</b>
+             using <b>Odata</b> protocols</h4>
+            </div>
+          </center>
+        </ion-slide>
+        <ion-slide class="slideWHScreen">
+          <center>
+            <div class="padding">
+              <h2>
+              <b style="color:#ef4048;">Warehouse</b>
+              <b style="color:#0d416b;">Management</b>
+            </h2>
+            </div>
+          </center>
+          <br>
+          <center>
+            <div class="padding center" style="border:1px solid #232527 ;border-radius:15px;height:40%;width:60%;">
+              <h4>This app is specifically for
+                <b style="color:#ef4048"> Warehouse</b>
+                <b style="color:#0d416b"> Management </b>
+                <b style="color:#232527">Bin-to-Bin Transfer</b>
+              </h4>
+            </div>
+          </center>
+          <br>
+          <br>
+          <center>
+            <div>
+              <h4 style="color:#232527;opcity:0.8">It allows the user to
+              <b style="color:#0d416b" >SCAN</b> a bin, select possible options and transfer the bin</h4>
+            </div>
+          </center>
+        </ion-slide>
+      </ion-slide-box>
+    </ion-view>
+
+  </script>
+</body>
+
+</html>

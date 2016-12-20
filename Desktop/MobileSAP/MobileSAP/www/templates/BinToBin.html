@@ -1,0 +1,33 @@
+<ion-view title="SAP WM Bin-to-Bin Transfer">
+
+  <ion-content class="has header has footer content home-background ">
+    <center>
+      <div class="InsContent padding">
+        Scans the barcode/QR Code for Storage Unit number or else you can enter the Storage Unit number manually. Click on Get Bin Details button to get the Bin detials
+      </div>
+    </center>
+    <div style="margin-top: 20%; margin-bottom:40%;">
+      <!--place the storage unit number or barcode data in the text field-->
+      <div class="padding">
+        <label class="item item-input">
+          <input type="text" ng-model="barcodeData" placeholder="Storage Unit Number" id="sUnit" value={{barcodeData}}>
+        </label>
+      </div>
+      <center>
+        <!--Scans the barcode data for Storage unit number-->
+        <div class="row">
+          <div class="col col-50">
+            <button class="button button-full button-positive" ng-click="scan()">&nbspScan Barcode </button>
+          </div>
+          <div class="col col-50">
+            <button class="button button-full button-positive" ng-disabled="!(barcodeData)" ng-click="getList()"> Get Bin Details </button>
+          </div>
+        </div>
+      </center>
+    </div>
+  </ion-content>
+
+  <ion-footer-bar class="bar-calm custom-dark" align-title="center">
+    <h1 class="title" style="font-size:16px !important;">&copy;SAP Mobile Factory</h1>
+  </ion-footer-bar>
+</ion-view>

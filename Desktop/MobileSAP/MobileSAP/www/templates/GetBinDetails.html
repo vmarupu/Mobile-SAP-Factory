@@ -1,0 +1,58 @@
+<ion-view title="SAP WM Bin-to-Bin Transfer">
+  <ion-nav-buttons side="right">
+    <button class="left button button-icon icon ion-arrow-left-c" ng-click="back()"></button>
+  </ion-nav-buttons>
+
+  <ion-content class="has-header has-footer content home-background">
+    <!--Details of Storage unit number-->
+    <div class="list list-inset" style="margin:0;">
+      <label class="item item-input padding">
+        <span class="input-label"><b>Storage UnitNo</b></span>
+        <input type="text" disabled="true" value={{sUnit}}>
+      </label>
+      <label class="item item-input padding">
+        <span class="input-label">  <b>Warehouse No</b></span>
+        <input type="text" disabled="true" value={{Lgnum}}>
+      </label>
+      <label class="item item-input padding">
+        <span class="input-label"><b>Plant</b></span>
+        <input type="text" disabled="true" value={{Werks}}>
+      </label>
+      <label class="item item-input padding">
+        <span class="input-label"><b>Storage Type</b></span>
+        <input type="text" disabled="true" value={{Lgtyp}}>
+      </label>
+      <label class="item item-input padding">
+        <span class="input-label">  <b> Material</b></span>
+        <input type="text" disabled="true" value={{Matnr}}>
+      </label>
+      <label class="item item-input padding">
+        <span class="input-label">  <b>Source Bin</b></span>
+        <input type="text" disabled="true" value={{lgpla}}>
+      </label>
+      <label class="item item-input padding">
+        <span class="input-label">  <b> Quantity</b></span>
+        <input type="text" disabled="true" value={{gesme}}>
+      </label>
+      <!--The selected source bin will be placed in this destination bin-->
+      <form name="search_form" ng-submit="StorageList()">
+        <label class="item item-input padding">
+          <input id="dest" type="text" placeholder="DestinationBin">
+          <button class="button"><i class="icon ion-search placeholder-icon positive "></i>
+          </button>
+        </label>
+      </form>
+      <!--Transfer the order-->
+      <div class="padding">
+        <center>
+          <button class="button button-positive button-block" ng-click="orderList()">
+            <b>Transfer Order</b>
+          </button>
+        </center>
+      </div>
+    </div>
+  </ion-content>
+  <ion-footer-bar class="bar-calm custom-dark" align-title="center">
+    <h1 class="title" style="font-size:16px !important;">&copy;SAP Mobile Factory</h1>
+  </ion-footer-bar>
+</ion-view>

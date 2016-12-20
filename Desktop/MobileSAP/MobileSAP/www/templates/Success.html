@@ -1,0 +1,25 @@
+<ion-view title="SAP WM Bin-to-Bin Transfer">
+  <ion-nav-buttons side="right">
+    <button class="left button button-icon icon ion-arrow-left-c" ng-click="back()"></button>
+  </ion-nav-buttons>
+  <ion-content class=" center has-header has-footer content padding text-center home-background">
+    <!--Get the transfer order number-->
+    <div style="margin-top: 20%; margin-bottom:40%;">
+      <div class="row">
+        <div class="col">
+          <span style="color:black; font-size:20px !important">Order has been successfully transferred with work order <br><br>
+        <b style="font-size: 30px !important; color:#00aae7">{{Etanum}}</b></span>
+        </div>
+      </div>
+      <!--To scan for an another bin-->
+      <div class="row">
+        <div class="col">
+          <button class="button button-positive" ng-click="goToScan()">Scan Another Bin?</button>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+  <ion-footer-bar class="bar-calm custom-dark" align-title="center">
+    <h1 class="title" style="font-size:16px !important;">&copy;SAP Mobile Factory</h1>
+  </ion-footer-bar>
+</ion-view>

@@ -1,0 +1,241 @@
+/*ion-item.item:hover {
+  background-color: lightgrey;
+}
+input::-moz-placeholder {
+  color: #A9A9A9;
+  font-size: 1.1em;
+}
+input:disabled {
+  background-color: #d3d3d3;
+}
+.home-container .row-center img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+body .slider {
+  height: 100%;
+}
+.slider-slide {
+  padding-top: 80px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+#logo {
+  margin: 30px 0px;
+}
+#list {
+  width: 170px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+#list ol {
+  margin-top: 30px;
+}
+#list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px;
+}
+.button.ng-hide {
+  display: none;
+}
+.home-background {
+  background: url("../img/black-2-61.png") no-repeat center center fixed;
+  background-size: cover;
+  opacity: 0.8;
+}
+.row, .scroll {
+  height: 100%;
+}
+
+/*.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+
+/*.custom-dark {
+  background-color: #00aae7 !important;
+}
+input {
+  color: white;
+}
+.bar .title {
+  font-size: 16px !important;
+  font-family: "OpenSansRegular";
+}
+.fontOpenSans {
+  font-family: "OpenSansRegular";
+  font-size: 14px !important;
+}
+.scroll{
+height: 100%;
+}
+.InsContent {
+  color: black;
+  font-size: 18px !important;
+  margin-top: 10% !important;
+  text-align: center;
+}
+
+.slideTechScreen{
+
+ background: url("../img/mobile-60.png") no-repeat center fixed;
+
+ background-size: cover;
+
+}
+
+.slideWHScreen{
+
+ background: url("../img/Intro3.png") no-repeat center fixed;
+
+ background-size: cover;
+
+}
+/*.item.item-input {
+    background-color: transparent;
+}*/
+
+
+/*.home-background {
+
+  background-color: #00aae7;
+
+  background-size: cover;
+
+}*/
+
+ion-item.item:hover {
+  background-color: lightgrey;
+}
+input::-moz-placeholder {
+  color: grey;
+  font-size: 16px;
+}
+input:disabled {
+  background-color: #d3d3d3;
+}
+.home-container .row-center img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+body .slider {
+  height: 100%;
+}
+.slider-slide {
+  padding-top: 80px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+#logo {
+  margin: 30px 0px;
+}
+#list {
+  width: 170px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+#list ol {
+  margin-top: 30px;
+}
+#list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px;
+}
+.button.ng-hide {
+  display: none;
+}
+.home-background {
+  background: url("../img/black-2-61.png") no-repeat center center fixed;
+  background-size: cover;
+}
+.row, .scroll {
+  height: 100%;
+}
+
+/*.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+*::-webkit-input-placeholder {
+  color: grey !important;
+}
+*:-moz-placeholder {
+  color: grey !important;
+}
+*:-ms-input-placeholder {
+  /* IE10+ */
+  color: grey !important;
+}
+.custom-dark {
+  background-color: #00aae7 !important;
+}
+input {
+  color: white;
+}
+.bar .title {
+  font-size: 18px !important;
+}
+.fontOpenSans {
+  font-size: 16px !important;
+}
+.InsContent {
+  color: black;
+  font-size: 18px !important;
+  margin-top: 10% !important;
+  text-align: center;
+}
+.scroll {
+  min-height: 100%;
+}
+input[type='text'] {
+  padding-left: 5px;
+}
+
+/*.view-with-bg{
+  .view-content {
+    background-image: url('../img/fondoapp.png');
+    background-size: cover;
+  }
+}*/
+
+.slideTechScreen {
+  background: url("../img/mobile-60.png") no-repeat center fixed;
+  background-size: cover;
+}
+.slideWHScreen {
+  background: url("../img/Intro3.png") no-repeat center fixed;
+  background-size: cover;
+}
+
+/*.item.item-input {
+    background-color: transparent;
+}*/
+
+
+/*.home-background {
+
+  background-color: #00aae7;
+
+  background-size: cover;
+
+}*/

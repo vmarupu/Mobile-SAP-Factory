@@ -1,0 +1,35 @@
+<ion-view title=" SAP Mobile App Factory">
+  <ion-nav-buttons side="right">
+    <button class="left button button-icon icon ion-arrow-left-c" ng-click="back()"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header has-footer home-background" ng-controller="ListInCtrl">
+    <!--Displays the souce bins and material numbers-->
+    <ion-list>
+      <ion-item class="item-icon-right" ng-repeat="dBin in lenum" ng-click="getDest(dBin.Lgpla)">
+        <div id="DestVal">
+          <i class="icon ion-chevron-right right"></i>
+          <div class="row">
+            <div class="col"><b>Material:</b></div>
+            <div class="col">{{dBin.IvMatnr}}</div>
+          </div>
+          <div class="row">
+            <div class="col"><b>Warehouse No:</b> </div>
+            <div class="col">{{dBin.IvLgnum}}</div>
+          </div>
+          <div class="row">
+            <div class="col"><b>Storage Type:</b> </div>
+            <div class="col">{{dBin.IvLgtyp}}</div>
+          </div>
+          <div class="row">
+            <div class="col"><b>Source Bin:</b> </div>
+            <div class="col">{{dBin.Lgpla}}</div>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+    </div>
+  </ion-content>
+  <ion-footer-bar class="bar-calm custom-dark" align-title="center">
+    <h1 class="title">&copy;Software Systems, Inc.</h1>
+  </ion-footer-bar>
+</ion-view>
